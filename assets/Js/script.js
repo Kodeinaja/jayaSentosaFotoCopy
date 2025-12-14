@@ -1,5 +1,6 @@
 // =========================
-// File: /assets/js/script.js
+// KEEP: /assets/js/script.js
+// (No dark dependency, safe for GitHub preview)
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll(".fade-in");
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     form.addEventListener("submit", e => {
       e.preventDefault();
-      alert("Terima kasih. Tim kami akan menghubungi Anda segera.");
+      alert("Terima kasih. Tim kami akan menghubungi Anda.");
       form.reset();
     });
   }
