@@ -1,5 +1,5 @@
 // =========================
-// REPLACE /assets/js/script.js
+// File: /assets/js/script.js
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll(".fade-in");
@@ -12,21 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.2 }
   );
 
   faders.forEach(el => observer.observe(el));
-
-  const navbar = document.querySelector(".navbar");
-  window.addEventListener("scroll", () => {
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-  });
 
   const form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", e => {
       e.preventDefault();
-      alert("Terima kasih. Tim premium kami akan menghubungi Anda.");
+      alert("Terima kasih. Tim kami akan menghubungi Anda segera.");
       form.reset();
     });
   }
