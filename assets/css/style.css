@@ -1,0 +1,240 @@
+/* =========================
+REPLACE: /assets/css/style.css
+Premium Clean Theme (GitHub-ready)
+========================= */
+
+:root {
+  --black: #0f172a;
+  --dark: #111827;
+  --white: #ffffff;
+  --gray: #f8fafc;
+  --border: #e5e7eb;
+
+  --red: #dc2626;
+  --blue: #2563eb;
+  --yellow: #facc15;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--gray);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--black);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+  color: var(--red);
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #b91c1c;
+}
+
+.btn-secondary {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-secondary:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.05),
+    rgba(220, 38, 38, 0.05)
+  );
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.hero-content p {
+  max-width: 640px;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  color: #475569;
+}
+
+/* ===== SECTION ===== */
+section {
+  padding: 90px 0;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+p {
+  color: #475569;
+}
+
+/* ===== GRID ===== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* ===== CARD ===== */
+.card,
+.portfolio-item,
+blockquote {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 34px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+/* ===== TESTIMONIAL ===== */
+blockquote {
+  font-style: italic;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* ===== CONTACT ===== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-size: 0.95rem;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 36px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* ===== ANIMATION ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
